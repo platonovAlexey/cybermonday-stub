@@ -1,0 +1,19 @@
+.footer{
+	flex: 0 0 auto;
+	position: relative;
+	padding-bottom: 50px;
+	background: #000;
+		&__text{
+		font-size: 12px;
+		color: $footerText;
+		text-align: center;
+		a{
+			font-size: 12px;
+			color: $footerText;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}

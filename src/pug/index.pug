@@ -1,0 +1,61 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+
+body
+	.layout_center_wrapper-project
+		+top-line()
+		+top-banner()
+		main.main
+			.container__inner
+				.text-desc
+					|Если интернет изобрели не ради «Киберпонедельника», то ради чего ещё!? 
+					br
+					|Протрите монитор, поменяйте батарейки в мышке и приготовьтесь к грандиозной онлайн-распродаже 
+					br
+					|со скидками до 80%! С Юлмартом у вас всё будет кибер! 
+				h1.title
+					|Получите доступ
+					br
+					|К ЗАКРЫТОЙ ПРЕДРАСПРОДАЖЕ
+				.container
+					.row
+						.offset-lg-4.col-lg-4.offset-md-3.col-md-6.col-sm-12.col-xs-12
+							form.form(action="#" method="post", class='form')
+								.form-field
+									input.form-input(type="email" name="email" placeholder="Введите ваш e-mail")
+								.form-field.form-field-btn
+									input.form-btn(type="submit" value="Получить первым")
+								.form-field
+									.form-checkbox.squaredThree
+										input(type="checkbox", class="form-checkbox__input", id="squaredThree")
+										label(for="squaredThree").form-checkbox__text Согласен на получение специальных предложений от Юлмарта
+
+				.sub-title
+					|КИБЕРБЕЗУМИЕ НАЧНЁТСЯ через:
+
+				.timer
+					ul.countdown
+						li
+							span.days 00
+							p.days_ref days
+						li.seperator .
+						li
+							span.hours 00
+							p.hours_ref hours
+						li.seperator :
+						li
+							span.minutes 00
+							p.minutes_ref minutes
+						li.seperator :
+						li
+							span.seconds 00
+							p.seconds_ref seconds
+
+		
+
+	+footer-text()
+
+
+	include blocks/footer-service/footer-service
